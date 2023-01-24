@@ -30,7 +30,7 @@ HELP_COMMAND = get_command("HELP_COMMAND")
 
 @app.on_message(
     filters.command(HELP_COMMAND)
-    & filters.private
+    & filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
